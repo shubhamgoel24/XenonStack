@@ -65,6 +65,7 @@
 
 /* For contact page */
 #ullist{
+    padding: 0;
     display: block;
     margin: 0 auto;
     width: 50vw;
@@ -83,6 +84,6 @@ body::-webkit-scrollbar {
         width: 90vw;
     }
     #ullist{
-        width: 90vw;
+        width: 95vw;
     }
 }
