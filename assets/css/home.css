@@ -1,0 +1,28 @@
+#items{
+    height: 88.5vh;
+    width: 80vw;
+    overflow-y: scroll;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255,255,255,0.3);
+}
+.item{
+    margin: 5%;
+    background-color: rgba(189, 215, 228, 0.74);
+}
+#items img{
+    width: 200px;
+}
+body{
+    margin-top: 6.5vh;
+}
+#items::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #items{
+        width: 90vw;
+    }
+}

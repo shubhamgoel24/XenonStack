@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/css/sign_in.css">
+
+<h1>User Sign Up</h1>
+
+<div class="Login" id='Login'>
+    <div class="container-fluid auth-container">
+        <form action="/create" method="POST">
+            <div class="row toggle-row align-items-center justify-content-around">
+                <a href="/sign-in" class='col-4 togButtons'>Sign In</a>
+                <a href="/sign-up" class='col-4 ActiveToggle togButtons'>Sign Up</a>
+            </div>
+
+            <div class='row align-items-center'>
+                <div class='col-1'>
+                    <i  class="fas fa-user"></i>
+                </div>
+                <div class='col-10'>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+            </div>
+
+            <div class='row align-items-center'>
+                <div class='col-1'>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class='col-10'>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class='row align-items-center'>
+                <div class='col-1'>
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class='col-10'>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+
+            <div class='row align-items-center'>
+                <div class='col-1'>
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class='col-10'>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+            </div>
+
+            <div class='row align-items-center justify-content-center'>
+                <div class='col-11'>
+                    <input class='Submit-Button' type="submit" value="Sign Up">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

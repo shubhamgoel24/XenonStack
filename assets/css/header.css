@@ -1,6 +1,6 @@
 header{
-    background-color: black;
-    color: white;
+    background-color: rgba(189, 215, 228, 0.74);
+    color: black;
     position: fixed;
     top: 0px;
     display: flex;
@@ -18,11 +18,14 @@ header div{
 header a{
     text-decoration: none;
     align-self: right;
-    color: aqua;
+    color: black;
     font-size: 1.2rem;
     margin-left: 5px;
-    border: 1px gray solid;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: white;
 }
 header a:hover{
+    background-color: black;
     color: white;
 }
