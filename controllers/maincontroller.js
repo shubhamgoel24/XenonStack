@@ -3,8 +3,11 @@ const contact = require('../models/contact');
 module.exports.home = function(req,res){
     return res.render('home',{});
 };
-module.exports.contact = function(req,res){
-    return res.render('contactPage',{});
+module.exports.contact = async function(req,res){
+    let contacts = await contact.find({});
+    return res.render('contactPage',{
+        contacts:contacts
+    });
 };
 module.exports.contactSubmit = async function(req,res){
     try{
@@ -17,4 +20,4 @@ module.exports.contactSubmit = async function(req,res){
     }catch(err){
         return res.redirect('back');
     }
-}
+};

@@ -62,8 +62,27 @@
     border-radius: 20px;
     
 }
+
+/* For contact page */
+#ullist{
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+}
+.contactitem{
+    padding-left: 10px;
+    border-radius: 25px;
+    margin: 5%;
+    background-color: rgba(189, 215, 228, 0.74);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
 @media screen and (max-width: 500px) {
     .auth-container{
+        width: 90vw;
+    }
+    #ullist{
         width: 90vw;
     }
 }

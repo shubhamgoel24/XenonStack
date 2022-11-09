@@ -39,4 +39,24 @@
             </div>
         </form>
     </div>
+    <br>
+    <br>
+    <div id="contacts-list-container" class="container-fluid">
+        <h2>For Development Only</h2>
+        <ul id="ullist">
+                <% for(item of contacts){ %>
+                    <div class="contactitem row align-items-center justify-content-center">
+                        <div class="row">
+                            Name:- <%= item.name %>
+                        </div>
+                        <div class="row">
+                            Email:- <%= item.email %>
+                        </div>
+                        <div class="row">
+                            Query:- <%= item.query %>
+                        </div>
+                    </div>
+                <% } %>
+        </ul>
+    </div>
 </div>
