@@ -1,0 +1,13 @@
+<header>
+        <div><a href="/">Sell A Phone</a></div>
+        <div>
+            <% if(locals.user){ %>
+                <%= user.name %>
+                <a href="/sign-out">Sign Out</a> </li>
+            <% }else{ %>
+                <a href="/sign-in">Sign In</a>
+                <a href="/sign-up">Sign Up</a>
+            <% } %>
+        </div>
+        
+</header>
